@@ -1,0 +1,13 @@
+
+<div class="card border-light" style="max-width: 15rem;" [routerLink] = "['/producto', producto?.id]">
+    <div class="card-header">
+        <h4 class="card-title text-center title">{{producto?.name}}</h4>
+    </div>
+    <div class="card-body imgbody">
+        <img class = "img" src="{{producto?.avatar}}" alt="{{producto?.name}}">
+    </div>
+    <div class="card-footer">
+        <p>{{producto?.price|currency}}</p>
+        <!-- <p *ngIf=" producto != undefined && producto.price > '800'">12 coutas sin interes de $417 </p> -->
+    </div>
+</div>
